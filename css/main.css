@@ -1,0 +1,42 @@
+
+.front {
+	/*opacity: 1;*/
+	-webkit-backface-visibility: hidden;
+	-webkit-transform-style: preserve-3d;
+	transition: 1s;
+}
+
+.back {
+	position: relative;
+	/*opacity: 0;*/
+	bottom: 200px;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: rotateY(-180deg);
+	-webkit-transform-style: preserve-3d;
+	transition: 1s;
+}
+
+.portfolio-item:hover .front {
+	-webkit-transform: rotateY(180deg);
+	/*transform: rotate (180deg);*/
+}
+
+.portfolio-item:hover .back {
+	-webkit-transform: rotateY(0deg);
+	/*transform: rotate (180deg);*/
+}
+
+	
+
+
+
+
+
+
+
+	
+		/*transition
+		
+		-webkit-transform-style
+		-webkit-backface-visibility*/
+
